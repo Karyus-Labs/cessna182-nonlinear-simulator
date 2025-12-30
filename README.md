@@ -83,4 +83,4 @@ Before running the simulation, you must find the equilibrium point:
 
 ### 🔗 Technical Discussion
 For a deep dive into the math and the comparison results, check out the full article on my engineering portfolio:
-**[Linear vs. Non-Linear: Validating Cessna 182 Dynamics]([https://renato-cm-filho.github.io](https://karyus-labs.github.io/aerospace/simulation/2025/11/16/cessna182-nonlinear-simulator.html))**
+**[Linear vs. Non-Linear: Validating Cessna 182 Dynamics]([https://renato-cm-filho.github.io](https://karyus-labs.github.io/aerospace/simulation/2025/11/16/cessna182-nonlinear-simulator.html)**
