@@ -38,8 +38,8 @@ By integrating these states, the model captures effects that linear models might
 
 This project was developed by the group *"Zona de Turbulência"*. As the lead for **computational architecture**, my specific contributions were:
 
-1.  **Parameter Adaptation:** Re-engineering legacy parameter extraction scripts (`navion.m`) to match the Cessna 182 airframe and atmospheric conditions.
-2.  **Simulink Modeling:** Designing the modular block architecture (`A20250527.slx`), ensuring proper signal routing for velocities ($u, w$), attitude ($\theta$), and trajectory coordinates.
+1.  **Parameter Adaptation:** Re-engineering legacy parameter extraction scripts (`parameters.m`) to match the Cessna 182 airframe and atmospheric conditions.
+2.  **Simulink Modeling:** Designing the modular block architecture (`Simulator.slx`), ensuring proper signal routing for velocities ($u, w$), attitude ($\theta$), and trajectory coordinates.
 3.  **Cross-Validation:** Developing the scripts to overlay non-linear results with linear predictions to prove model convergence.
 
 ---
@@ -62,12 +62,12 @@ The model was tested with a **1-degree elevator step input** ($t=0$). The result
 
 ### 2. Trimming the Aircraft
 Before running the simulation, you must find the equilibrium point:
-1.  Run `navion_023.m` to load the Cessna 182 dataset.
+1.  Run `parameters.m` to load the Cessna 182 dataset.
 2.  Execute `MainSimulator.m`. This solves the Newton-Raphson iteration.
 3.  **Check the Command Window:** Note the values for `u0`, `w0`, `q0`, and `theta0`.
 
 ### 3. Running the Simulator
-1.  Open `A20250527.slx`.
+1.  Open `Simulator.slx`.
 2.  Inside the **"Motion"** block, input the recorded `u0, w0, q0, theta0` as Initial Conditions.
 3.  Click **Run**.
 4.  Open the **Scopes** to view the real-time dynamic response.
